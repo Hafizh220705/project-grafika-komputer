@@ -69,7 +69,14 @@ Pastikan susunan file Anda seperti berikut agar *path* aset terbaca dengan benar
 ## 🚀 Cara Menjalankan (Installation)
 Karena proyek ini memuat file eksternal (model .obj dan tekstur), browser akan memblokirnya jika dibuka langsung dengan cara klik dua kali (file:// protocol) karena kebijakan keamanan CORS Policy.
 
-Anda harus menjalankannya menggunakan Local Server. Pilih salah satu cara di bawah ini:
+Langkah 1: Clone Repository
+Pertama, unduh source code proyek ini ke komputer Anda menggunakan Git:
+```
+git clone [https://github.com/Hafizh220705/project-grafika-komputer.git](https://github.com/Hafizh220705/project-grafika-komputer.git)
+cd project-grafika-komputer
+```
+Langkah 2: Jalankan Local Server
+Pilih salah satu metode di bawah ini untuk menjalankan server lokal:
 
 Cara 1: Menggunakan VS Code (Disarankan)
 1. Install ekstensi Live Server (by Ritwick Dey) di Visual Studio Code.
