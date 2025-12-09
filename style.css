@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000;
+}
+
+#ui-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 280px;
+    background: rgba(20, 20, 30, 0.85); /* Latar belakang gelap transparan */
+    backdrop-filter: blur(10px); /* Efek blur di belakang UI */
+    border-radius: 12px;
+    padding: 20px;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    user-select: none;
+    pointer-events: auto;
+}
+
+.header h1 {
+    margin: 0 0 5px 0;
+    font-size: 1.1rem;
+    color: #4facfe;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.header p {
+    margin: 0 0 15px 0;
+    font-size: 0.8rem;
+    color: #ccc;
+}
+
+.metrics {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.metric-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.metric-box .label {
+    font-size: 0.7rem;
+    color: #aaa;
+    text-transform: uppercase;
+}
+
+.metric-box .value {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.controls {
+    margin-bottom: 15px;
+}
+
+.controls label {
+    font-size: 0.85rem;
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Custom Styling untuk Slider */
+input[type=range] {
+    width: 100%;
+    cursor: pointer;
+}
+
+.range-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.7rem;
+    color: #888;
+    margin-top: 5px;
+}
+
+.info-panel {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.info-panel h3 {
+    margin: 0 0 5px 0;
+    font-size: 0.85rem;
+    color: #ffcc00;
+}
+
+.info-panel p {
+    margin: 0;
+    font-size: 0.8rem;
+    line-height: 1.3;
+}
+
+.footer {
+    font-size: 0.75rem;
+    color: #666;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 10px;
+}
+
+.footer p {
+    margin: 2px 0;
+}

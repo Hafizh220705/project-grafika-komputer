@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDG 11 & 13: Sustainable City Visualization</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="ui-container">
+        <div class="header">
+            <h1>SDG 11 & 13: City & Pollution</h1>
+            <p>Simulasi Dampak Emisi Karbon</p>
+        </div>
+
+        <div class="metrics">
+            <div class="metric-box">
+                <span class="label">AQI Level</span>
+                <span class="value" id="aqi-display">0</span>
+            </div>
+            <div class="metric-box">
+                <span class="label">Status</span>
+                <span class="value" id="status-display" style="color: #00ff00;">Excellent</span>
+            </div>
+        </div>
+
+        <div class="controls">
+            <label for="pollutionSlider">Tingkat Emisi (Geser):</label>
+            <input type="range" id="pollutionSlider" min="0" max="100" value="0">
+            <div class="range-labels">
+                <span>Bersih</span>
+                <span>Beracun</span>
+            </div>
+        </div>
+
+        <div class="info-panel">
+            <h3>Rekomendasi Kesehatan:</h3>
+            <p id="health-advice">Udara sangat segar. Nikmati aktivitas di luar ruangan.</p>
+        </div>
+
+        <div class="footer">
+            <p><strong>Controls:</strong></p>
+            <p>W, A, S, D : Bergerak Maju/Samping</p>
+            <p>SPACE : Terbang Naik | SHIFT : Turun</p>
+            <p>Klik Kiri + Drag : Rotasi Kamera</p>
+            <p>Klik Kanan + Drag : Geser Kamera</p>
+        </div>
+    </div>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
