@@ -34,6 +34,7 @@ Tujuan utama proyek ini adalah sebagai media edukasi interaktif untuk mendukung 
 | **SPACE** | Terbang Naik (Elevasi) |
 | **SHIFT** | Turun (Elevasi) |
 | **Klik Kiri + Drag** | Rotasi Pandangan Kamera |
+| **Klik Kanan + Drag** | Geser Kamera |
 | **Scroll Mouse** | Zoom In / Out |
 
 ## 🛠️ Tech Stack
